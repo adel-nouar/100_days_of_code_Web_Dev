@@ -3,14 +3,14 @@
 
 
 ## Course given by 
-### Maximilian Schwarzmüller and Manuel Lorenz
+Maximilian Schwarzmüller and Manuel Lorenz
 
 
 
 ## Link to the course: 
-### https://www.udemy.com/course/100-days-of-code-web-development-bootcamp
+https://www.udemy.com/course/100-days-of-code-web-development-bootcamp
 
 
 
 ## Link to the compagnon web site: 
-### https://100daysofwebdev.com/
+https://100daysofwebdev.com/
