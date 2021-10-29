@@ -20,5 +20,7 @@ a:hover {
 }
 
 #todays-challenge {
-  color: rgb(107, 96, 83);
+  color: rgb(167, 96, 83);
+  font-weight: bold;
+  font-size: 52px;
 }
