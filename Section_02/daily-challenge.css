@@ -1,5 +1,7 @@
 body {
   text-align: center;
+  background-color: rgb(233, 215, 207);
+  margin: 50px;
 }
 
 img {
@@ -10,7 +12,7 @@ img {
 
 h1 {
   font-family: "Oswald", sans-serif;
-  color: red;
+  color: rgb(83, 75, 75);
 }
 p {
   font-family: "Fira Sans", sans-serif;
