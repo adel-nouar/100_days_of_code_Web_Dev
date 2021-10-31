@@ -1,8 +1,10 @@
 ol {
   list-style: none;
+  /* color: rgb(251, 255, 0); */
 }
 
 li {
-  list-style: square;
-  list-style: none;
+  /* list-style: square;
+  list-style: none; */
+  /* color: rgb(251, 100, 0); */
 }
