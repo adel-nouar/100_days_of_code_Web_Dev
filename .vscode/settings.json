@@ -4,5 +4,6 @@
   "files.autoSave": "onFocusChange",
   "code-runner.clearPreviousOutput": true,
   "code-runner.saveAllFilesBeforeRun": true,
-  "code-runner.showExecutionMessage": false
+  "code-runner.showExecutionMessage": false,
+  "window.zoomLevel": 1
 }
