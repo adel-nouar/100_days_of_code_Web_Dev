@@ -1,3 +1,4 @@
+/* MAIN */
 main {
   width: 800px;
   margin: 200px auto 72px auto;
@@ -16,8 +17,22 @@ img {
   margin-top: -134px;
 }
 
+h1 {
+  font-size: 30px;
+  color: rgb(31, 25, 25);
+}
+
+span {
+  color: rgb(66, 2, 2);
+}
+
 #todays-challenge {
-  color: rgb(170, 96, 83);
+  color: rgb(75, 59, 59);
   font-weight: bold;
   font-size: 52px;
+}
+
+/* FOOTER */
+a {
+  color: rgb(73, 29, 50);
 }
