@@ -12,6 +12,8 @@ img {
   width: 200px;
   height: 200px;
   border-radius: 100px; /* It's a circle because it's half of width and height */
+  border: 5px solid rgb(44, 44, 44);
+  margin-top: -134px;
 }
 
 #todays-challenge {
