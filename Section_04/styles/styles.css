@@ -7,7 +7,6 @@ font-family: 'Zen Antique', serif;
 
 body {
   font-family: "Fira Sans", sans-serif;
-
   background-color: rgba(244, 234, 255);
 }
 
@@ -25,12 +24,17 @@ header img {
   width: 300px;
 }
 main {
-  background-color: rgba(119, 74, 216, 255);
+  background-color: rgb(122, 74, 218);
+  padding: 32px;
+  margin: 32px auto;
+  width: 700px;
+  border-radius: 8px;
+  color: rgb(248, 241, 255);
 }
 
-main h2 {
-  color: ;
-}
+/* main h2 {
+  color: rgb(255, 255, 255);
+} */
 
 #btn-download {
   background-color: rgb(249, 201, 39);
