@@ -4,3 +4,28 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Zen Antique', serif;
 */
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  text-align: center;
+  background-color: rgba(244, 234, 255);
+}
+
+h1 {
+  color: rgb(88, 49, 196);
+  font-size: 52px;
+}
+
+main {
+  background-color: rgba(119, 74, 216, 255);
+}
+
+main h2 {
+  color: white;
+}
+
+#btn-download {
+  background-color: rgba(249, 201, 39, 255);
+  font-size: 24px;
+  /* color: rgba(122, 87, 16, 255); */
+}
