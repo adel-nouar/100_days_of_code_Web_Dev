@@ -11,11 +11,18 @@ body {
   background-color: rgba(244, 234, 255);
 }
 
+header {
+  padding: 32px;
+}
+
 h1 {
   color: rgb(88, 49, 196);
   font-size: 52px;
 }
 
+header img {
+  width: 300px;
+}
 main {
   background-color: rgba(119, 74, 216, 255);
 }
