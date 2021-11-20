@@ -15,7 +15,7 @@ p {
 
 #container {
   background-color: #521751;
-  position: relative;
+  position: absolute;
 }
 
 #container p {
