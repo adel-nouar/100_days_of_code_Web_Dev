@@ -15,7 +15,7 @@ p {
 
 #container {
   background-color: #521751;
-  position: absolute;
+  /* position: relative; */
 }
 
 #container p {
@@ -31,6 +31,9 @@ p {
   /* position: fixed; */
   position: absolute;
   top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 #three {
