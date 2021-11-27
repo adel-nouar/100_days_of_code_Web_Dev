@@ -45,11 +45,13 @@
 }
 
 #hero-content a:hover {
-  background-color: rgb(255, 238, 0);
+  /* background-color: rgb(255, 238, 0); */
+  background: linear-gradient(45deg, rgb(227, 255, 253), rgb(202, 243, 240));
 }
 
 #highlights {
   padding: 24px;
+  background-color: rgb(228, 255, 253);
 }
 
 #highlights h2 {
