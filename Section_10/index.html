@@ -24,7 +24,25 @@
           <ul>
             <li>
               <label for="username">Your name</label>
-              <input type="text" name="user-name" id="username" required />
+              <input
+                type="text"
+                name="user-name"
+                id="username"
+                required
+                placeholder="Please enter your name here"
+              />
+            </li>
+            <li>
+              <label for="useremail">Your email address</label>
+              <input
+                type="email"
+                name="user-email"
+                id="useremail"
+                required
+                min="1800-01-01"
+                max="2500--01-01"
+                placeholder="Please enter your email"
+              />
             </li>
             <li>
               <label for="userpassword">Your password</label>
@@ -34,12 +52,8 @@
                 id="userpassword"
                 required
                 minlength="7"
+                placeholder="Please enter your password"
               />
-            </li>
-            <li>
-              <label for="useremail">Your email address</label>
-              <input type="email" name="user-email" id="useremail" required
-              min="1800-01-01" max="2500--01-01/>
             </li>
           </ul>
         </section>
@@ -82,7 +96,7 @@
 
         <section>
           <label for="usermessage">Your message</label>
-          <textarea name="user-message" id="usermessage"></textarea>
+          <textarea name="user-message" id="usermessage" rows="8"></textarea>
         </section>
 
         <section>
