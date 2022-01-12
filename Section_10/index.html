@@ -13,9 +13,13 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <form action="/usr-data" method="POST">
+    <form action="/usr-data" method="GET">
       <label for="username">Your name</label>
       <input type="text" name="user-name" id="username" />
+
+      <label for="usermessage">Your message</label>
+      <textarea name="user-message" id="usermessage"></textarea>
+
       <label for="useremail">Your email address</label>
       <input type="email" name="user-email" id="useremail" />
       <label for="userage">Your age</label>
