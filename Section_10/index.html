@@ -24,15 +24,22 @@
           <ul>
             <li>
               <label for="username">Your name</label>
-              <input type="text" name="user-name" id="username" />
+              <input type="text" name="user-name" id="username" required />
             </li>
             <li>
               <label for="userpassword">Your password</label>
-              <input type="password" name="user-password" id="userpassword" />
+              <input
+                type="password"
+                name="user-password"
+                id="userpassword"
+                required
+                minlength="7"
+              />
             </li>
             <li>
               <label for="useremail">Your email address</label>
-              <input type="email" name="user-email" id="useremail" />
+              <input type="email" name="user-email" id="useremail" required
+              min="1800-01-01" max="2500--01-01/>
             </li>
           </ul>
         </section>
@@ -42,11 +49,25 @@
           <ul>
             <li>
               <label for="userage">Your age</label>
-              <input type="number" step="1" name="user-age" id="userage" />
+              <input
+                type="number"
+                step="1"
+                name="user-age"
+                id="userage"
+                required
+                min="18"
+                max="300"
+              />
             </li>
             <li>
               <label for="birthdate">Your birthdate</label>
-              <input type="date" name="user-birthdate" id="birthdate" />
+              <input
+                type="date"
+                name="user-birthdate"
+                id="birthdate"
+                required
+                m
+              />
             </li>
             <li>
               <label for="favorite-color">Your favorite color?</label>
@@ -73,6 +94,7 @@
                 name="verify"
                 id="verify-text-message"
                 value="text-message"
+                required
               />
               <label for="verify-text-message">Via text message (SMS)</label>
             </li>
@@ -83,6 +105,7 @@
                 name="verify"
                 id="verify-phone"
                 value="phone"
+                required
               />
               <label for="verify-phone">Via a phone call</label>
             </li>
@@ -93,6 +116,7 @@
                 name="verify"
                 id="verify-email"
                 value="email"
+                required
               />
               <label for="verify-email">Via an email</label>
             </li>
@@ -127,7 +151,7 @@
         <hr />
         <section>
           <div class="form-control-inline">
-            <input type="checkbox" name="terms" id="agree-terms" />
+            <input type="checkbox" name="terms" id="agree-terms" required />
             <label for="agree-terms">Agree to terms?</label>
           </div>
         </section>
