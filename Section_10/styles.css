@@ -3,6 +3,17 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+h1 {
+  text-align: center;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 label {
   margin-bottom: 0.5rem;
   display: block;
@@ -52,11 +63,11 @@ button:hover {
   border-color: rgb(52, 14, 95);
 }
 
-.for-control-inline {
+.form-control-inline {
   display: flex;
 }
 
-.for-control-inline input {
+.form-control-inline input {
   width: auto;
   margin-right: 0.5rem;
 }
