@@ -17,3 +17,43 @@ form {
   border-radius: 6px;
   font-weight: 400;
 }
+
+section {
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+label {
+  color: rgb(52, 52, 126);
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  font: inherit;
+  padding: 0.5rem;
+  border: 1px solid rgb(171, 171, 174);
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  background-color: rgba(246, 246, 255, 0.467);
+}
+
+.inline-control {
+  display: flex;
+}
