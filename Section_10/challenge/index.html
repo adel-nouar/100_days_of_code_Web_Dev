@@ -18,7 +18,7 @@
     </header>
 
     <main>
-      <form action="">
+      <form action="/challenge" method="GET">
         <section>
           <h2>How can I help you?</h2>
           <ul>
@@ -34,19 +34,31 @@
 
             <li>
               <label for="phone">Your Phone Number</label>
-              <input type="tel" id="phone" name="phone" required />
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                minlength="5"
+              />
             </li>
 
             <li>
               <label for="message">Your Message</label>
-              <textarea name="message" id="message"></textarea>
+              <textarea
+                name="message"
+                id="message"
+                required
+                minlength="10"
+                maxlength="200"
+              ></textarea>
             </li>
           </ul>
         </section>
 
         <section>
           <label for="howfind">How did you find us?</label>
-          <select name="howfind" id="howfind">
+          <select name="howfind" id="howfind" required>
             <option value="">--Please Choose an option</option>
             <option value="websearch">Web Search</option>
             <option value="socialmedia">Social Media</option>
@@ -60,15 +72,33 @@
           <h2>How should we reply?</h2>
           <ul>
             <li>
-              <input type="radio" name="reply" id="call" value="call" />
+              <input
+                type="radio"
+                name="reply"
+                id="call"
+                value="call"
+                required
+              />
               <label for="call">Call me</label>
             </li>
             <li>
-              <input type="radio" name="reply" id="email" value="email" />
+              <input
+                type="radio"
+                name="reply"
+                id="email"
+                value="email"
+                required
+              />
               <label for="email">Send me an email</label>
             </li>
             <li>
-              <input type="radio" name="reply" id="noreply" value="noreply" />
+              <input
+                type="radio"
+                name="reply"
+                id="noreply"
+                value="noreply"
+                required
+              />
               <label for="noreply">Don't reply</label>
             </li>
           </ul>

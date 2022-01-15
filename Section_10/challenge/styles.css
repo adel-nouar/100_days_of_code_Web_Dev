@@ -6,10 +6,6 @@ body {
 h1 {
   text-align: center;
   margin: 1.8rem;
-  font-weight: 700;
-}
-h2 {
-  font-weight: 700;
 }
 
 form {
@@ -20,18 +16,4 @@ form {
   box-shadow: 0 2px 8px rgb(0, 0, 2);
   border-radius: 6px;
   font-weight: 400;
-}
-
-section ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-input:focus {
-  background-color: rgb(139, 157, 195);
-}
-
-textarea {
-  background-color: rgb(139, 157, 195);
 }
