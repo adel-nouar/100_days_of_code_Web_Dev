@@ -23,35 +23,36 @@
           <h2>How can I help you?</h2>
           <ul>
             <li>
-              <label for="">Your Name</label>
-              <input type="text" required />
+              <label for="username">Your Name</label>
+              <input type="text" id="username" name="username" required />
             </li>
 
             <li>
-              <label for="">Your E-Mail Address</label>
-              <input type="email" required />
+              <label for="email">Your E-Mail Address</label>
+              <input type="email" id="email" name="email" required />
             </li>
 
             <li>
-              <label for="">Your Phone Number</label>
-              <input type="number" />
+              <label for="phone">Your Phone Number</label>
+              <input type="tel" id="phone" name="phone" required />
             </li>
 
             <li>
-              <label for="">Your Message</label>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <label for="message">Your Message</label>
+              <textarea name="message" id="message"></textarea>
             </li>
           </ul>
         </section>
 
         <section>
-          <label for="">How did you find us?</label>
-          <select name="howfind" id="how-find">
+          <label for="howfind">How did you find us?</label>
+          <select name="howfind" id="howfind">
             <option value="">--Please Choose an option</option>
             <option value="websearch">Web Search</option>
             <option value="socialmedia">Social Media</option>
             <option value="websites">Web Sites</option>
             <option value="Friends">Friends</option>
+            <option value="Other">Other</option>
           </select>
         </section>
 
