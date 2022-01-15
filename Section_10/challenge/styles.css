@@ -1,23 +1,37 @@
 body {
-  /* background-color: rgb(rgb(178, 186, 189)); */
-  /* background-color: black; */
-  background-color: aqua;
+  background-color: rgb(246, 251, 252);
+  font-family: "Roboto", sans-serif;
 }
 
-header {
+h1 {
   text-align: center;
+  margin: 1.8rem;
+  font-weight: 700;
+}
+h2 {
+  font-weight: 700;
 }
 
-main {
-  background-color: gray;
+form {
+  background-color: rgb(231, 232, 237);
   width: 25rem;
-  margin: 3rem auto;
-  padding: 0.7rem;
+  margin: auto;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgb(0, 0, 2);
   border-radius: 6px;
+  font-weight: 400;
 }
 
 section ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+input:focus {
+  background-color: rgb(139, 157, 195);
+}
+
+textarea {
+  background-color: rgb(139, 157, 195);
 }
