@@ -53,6 +53,37 @@ textarea:focus {
   background-color: rgba(246, 246, 255, 0.467);
 }
 
+button {
+  font: inherit;
+  border: 1px solid rgb(91, 91, 112);
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#form-actions {
+  text-align: right;
+}
+
+.btn-filled {
+  background-color: rgb(91, 91, 112);
+  color: wheat;
+}
+
+.btn-empty {
+  background-color: transparent;
+  color: rgb(91, 91, 112);
+}
+
+.btn-filled:hover {
+  background-color: rgb(69, 89, 129);
+  border-color: rgb(69, 89, 129);
+}
+
+.btn-empty:hover {
+  background-color: rgb(208, 215, 230);
+}
+
 .inline-control {
   display: flex;
 }

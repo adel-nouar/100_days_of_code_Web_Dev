@@ -1,118 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Forms Challenge</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
 
-        <link rel="stylesheet" href="./styles.css" />
-        <title>Forms Challenge</title>
-    </head>
-    <body>
-        <header>
-            <h1>Contact Us</h1>
-        </header>
+    <main>
+      <form action="/challenge" method="GET">
+        <section>
+          <h2>How can I help you?</h2>
+          <ul>
+            <li>
+              <label for="username">Your Name</label>
+              <input type="text" id="username" name="username" required />
+            </li>
 
-        <main>
-            <form action="/challenge" method="GET">
-                <section>
-                <h2>How can I help you?</h2>
-                <ul>
-                    <li>
-                    <label for="username">Your Name</label>
-                    <input type="text" id="username" name="username" required />
-                    </li>
+            <li>
+              <label for="email">Your E-Mail Address</label>
+              <input type="email" id="email" name="email" required />
+            </li>
 
-                    <li>
-                    <label for="email">Your E-Mail Address</label>
-                    <input type="email" id="email" name="email" required />
-                    </li>
+            <li>
+              <label for="phone">Your Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                minlength="5"
+              />
+            </li>
 
-                    <li>
-                    <label for="phone">Your Phone Number</label>
-                    <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        required
-                        minlength="5"
-                    />
-                    </li>
+            <li>
+              <label for="message">Your Message</label>
+              <textarea
+                name="message"
+                id="message"
+                required
+                minlength="10"
+                maxlength="200"
+                rows="6"
+              ></textarea>
+            </li>
+          </ul>
+        </section>
 
-                    <li>
-                    <label for="message">Your Message</label>
-                    <textarea
-                        name="message"
-                        id="message"
-                        required
-                        minlength="10"
-                        maxlength="200"
-                        rows="6"
-                    ></textarea>
-                    </li>
-                </ul>
-                </section>
+        <section>
+          <label for="howfind">How did you find us?</label>
+          <select name="howfind" id="howfind" required>
+            <option value="">--Please Choose an option</option>
+            <option value="websearch">Web Search</option>
+            <option value="socialmedia">Social Media</option>
+            <option value="websites">Web Sites</option>
+            <option value="Friends">Friends</option>
+            <option value="Other">Other</option>
+          </select>
+        </section>
 
-                <section>
-                <label for="howfind">How did you find us?</label>
-                <select name="howfind" id="howfind" required>
-                    <option value="">--Please Choose an option</option>
-                    <option value="websearch">Web Search</option>
-                    <option value="socialmedia">Social Media</option>
-                    <option value="websites">Web Sites</option>
-                    <option value="Friends">Friends</option>
-                    <option value="Other">Other</option>
-                </select>
-                </section>
-
-                <section>
-                    <h2>How should we reply?</h2>
-                    <ul>
-                        <li class="inline-control"> 
-                            <input
-                                type="radio"
-                                name="reply"
-                                id="call"
-                                value="call"
-                                required 
-                            />
-                            <label for="call">Call me</label>
-                        </li>
-                        <li class="inline-control>
-                            <input
-                                type="radio"
-                                name="reply"
-                                id="email"
-                                value="email"
-                                required
-                            />
-                            <label for="email">Send me an email</label>
-                        </li>
-                        <li class="inline-control>
-                            <input
-                                type="radio"
-                                name="reply"
-                                id="noreply"
-                                value="noreply"
-                                required
-                            />
-                            <label for="noreply">Don't reply</label>
-                        </li>
-                    </ul>
-                </section>
-                <section  class="inline-control>
-                    <input 
-                        type="checkbox" 
-                        name="terms" 
-                        id="accept-terms" 
-                        required 
-                    />
-                    <label for="accept-terms">Accept terms</label>
-                </section>
-                <section>
-                    <button type="reset">Clear</button>
-                    <button type="submit">Submit</button>
-                </section>
-            </form>
-        </main>
-    </body>
+        <section>
+          <h2>How should we reply?</h2>
+          <ul>
+            <li class="inline-control">
+              <input
+                type="radio"
+                name="reply"
+                id="call"
+                value="call"
+                required
+              />
+              <label for="call">Call me</label>
+            </li>
+            <li class="inline-control">
+              <input
+                type="radio"
+                name="reply"
+                id="email"
+                value="email"
+                required
+              />
+              <label for="email">Send me an email</label>
+            </li>
+            <li class="inline-control">
+              <input
+                type="radio"
+                name="reply"
+                id="noreply"
+                value="noreply"
+                required
+              />
+              <label for="noreply">Don't reply</label>
+            </li>
+          </ul>
+        </section>
+        <section class="inline-control">
+          <input type="checkbox" name="terms" id="accept-terms" required />
+          <label for="accept-terms">Accept terms</label>
+        </section>
+        <section id="form-actions">
+          <button type="reset" class="btn-empty">Clear</button>
+          <button type="submit" class="btn-filled">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
 </html>
