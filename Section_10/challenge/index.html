@@ -18,17 +18,17 @@
           <ul>
             <li>
               <label for="">Your Name</label>
-              <input type="text" />
+              <input type="text" required />
             </li>
 
             <li>
               <label for="">Your E-Mail Address</label>
-              <input type="text" />
+              <input type="email" required />
             </li>
 
             <li>
               <label for="">Your Phone Number</label>
-              <input type="text" />
+              <input type="number" />
             </li>
 
             <li>
@@ -65,6 +65,10 @@
               <label for="noreply">Don't reply</label>
             </li>
           </ul>
+        </section>
+        <section>
+          <input type="checkbox" name="terms" id="agree-terms" required />
+          <label for="agree-terms">Agree to terms?</label>
         </section>
         <section>
           <button type="reset">Clear</button>

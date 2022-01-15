@@ -10,4 +10,14 @@ header {
 
 main {
   background-color: gray;
+  width: 25rem;
+  margin: 3rem auto;
+  padding: 0.7rem;
+  border-radius: 6px;
+}
+
+section ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
