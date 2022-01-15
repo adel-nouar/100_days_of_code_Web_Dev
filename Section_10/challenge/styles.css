@@ -1,6 +1,6 @@
 body {
   background-color: rgb(246, 251, 252);
-  font-family: "Roboto", sans-serif;
+  font-family: sans-serif;
 }
 
 h1 {
@@ -10,12 +10,11 @@ h1 {
 
 form {
   background-color: rgb(231, 232, 237);
-  width: 25rem;
+  width: 40rem;
   margin: auto;
   padding: 1rem;
-  box-shadow: 0 2px 8px rgb(0, 0, 2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
-  font-weight: 400;
 }
 
 section {
@@ -56,4 +55,13 @@ textarea:focus {
 
 .inline-control {
   display: flex;
+}
+
+.inline-control label {
+  margin: 0;
+  margin-left: 0.5rem;
+}
+
+.inline-control input {
+  width: auto;
 }
