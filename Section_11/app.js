@@ -11,3 +11,6 @@ let job = {
 alert(hobbies);
 alert(hobbies[1]);
 alert(job.title);
+
+let adultYears = age - 18;
+alert(adultYears);
