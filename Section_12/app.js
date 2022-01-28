@@ -9,3 +9,11 @@ anchorElement.href = "https://google.com";
 // anchorElement.href = "https://academind.com";
 anchorElement = document.querySelector("p a");
 anchorElement.href = "https://academind.com";
+
+let newAnchorElement = document.createElement("a");
+newAnchorElement.href = "https:\\google.com";
+newAnchorElement.textContent = "Goes to Google";
+
+let firstParagraph = document.querySelector("p");
+
+firstParagraph.append(newAnchorElement);
