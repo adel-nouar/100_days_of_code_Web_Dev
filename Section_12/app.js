@@ -41,6 +41,8 @@ firstParagraph.parentElement.append(firstParagraph);
 
 // innerHTML
 
-// console.log(firstParagraph.innerHTML);
+console.log(firstParagraph.innerHTML);
+// console.log(firstParagraph.textContent);
 
-// firstParagraph.innerHTML = "Hi! This is <strong>important!</strong>.";
+// firstParagraph.textContent = "Hi! This is <strong>important!</strong>.";
+firstParagraph.innerHTML = "Hi! This is <strong>important!</strong>.";
