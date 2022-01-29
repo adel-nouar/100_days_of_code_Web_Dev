@@ -17,3 +17,8 @@ newAnchorElement.textContent = "Goes to Google";
 let firstParagraph = document.querySelector("p");
 
 firstParagraph.append(newAnchorElement);
+
+let firstH1Element = document.querySelector("h1");
+
+firstH1Element.remove();
+firstH1Element.parentElement.removeChild(firstH1Element); // for older browser
