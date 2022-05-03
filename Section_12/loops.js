@@ -2,16 +2,16 @@ for (let i = 0; i < 10; i++) {
   console.log(i);
 }
 
-const users = ["Max", "Anna", "Joel"];
+const users = ['Max', 'Anna', 'Joel'];
 
 for (const user of users) {
   console.log(user);
 }
 
 const loggedInUser = {
-  name: "Max",
+  name: 'Max',
   age: 32,
-  isAdmin: true,
+  isAdmin: true
 };
 
 for (const propertyName in loggedInUser) {
@@ -22,7 +22,7 @@ for (const propertyName in loggedInUser) {
 let isFinished = false;
 
 while (!isFinished) {
-  isFinished = confirm("Do you want to quit?");
+  isFinished = confirm('Do you want to quit?');
 }
 
-console.log("Done!");
+console.log('Done!');
