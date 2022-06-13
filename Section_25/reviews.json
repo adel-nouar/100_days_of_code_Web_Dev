@@ -1,0 +1,1 @@
+{"_id":{"$oid":"62a64bdc151a4787b5e60942"},"reviewer":{"firstName":"Test First Name","lastName":"Test Last Name"},"rating":3,"text":"This was okay - Could be better!","date":{"$date":"2021-09-10T00:00:00Z"},"restaurant":{"id":{"$oid":"62a643ebe33884b7382e0b80"},"name":"Munich Schnitzelhouse"}}

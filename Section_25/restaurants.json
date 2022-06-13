@@ -1,0 +1,4 @@
+{"_id":{"$oid":"62a643ebe33884b7382e0b80"},"name":"Munich Schnitzelhouse","address":{"street":"Some Street","streetNumber":"23b"}}
+{"_id":{"$oid":"62a64434e33884b7382e0b81"},"name":"Burger House","address":{"street":"Another Street","streetNumber":"15"}}
+{"_id":{"$oid":"62a64ab1151a4787b5e60940"},"name":"Munch Schnitzelhouse","address":{"street":"FoodStreet","streetNumber":"23b","postalCode":80333,"city":"Munich","country":"Germany"},"type":{"typeId":{"$oid":"62a64a37151a4787b5e6093a"},"name":"German"}}
+{"_id":{"$oid":"62a64ac6151a4787b5e60941"},"name":"Burger House","address":{"street":"HamStreet","streetNumber":"12","postalCode":10115,"city":"Berlin","country":"Germany"},"type":{"typeId":{"$oid":"62a64a4a151a4787b5e6093c"},"name":"American"}}
