@@ -22,7 +22,6 @@ router.get("/posts", async function (req, res) {
 
 router.get("/new-post", async function (req, res) {
   const authors = await db.getDb().collection("authors").find().toArray();
-  console.log(authors);
   res.render("create-post", { authors: authors });
 });
 
@@ -57,6 +56,47 @@ router.get("/posts/:id", async function (req, res) {
   if (!post) {
     return res.status(404).render("404");
   }
+
+  post.humanReadableDate = post.date.toLocaleDateString("en-US", {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+  post.date = post.date.toISOString();
   res.render("post-detail", { post: post });
+});
+
+router.get("/posts/:id/edit", async function (req, res) {
+  const postId = req.params.id;
+  const post = await db
+    .getDb()
+    .collection("posts")
+    .findOne({ _id: new ObjectId(postId) }, { title: 1, summary: 1, body: 1 });
+  if (!post) {
+    return res.status(404).render("404");
+  }
+
+  res.render("update-post", { post: post });
+});
+
+router.post("/posts/:id/edit", async function (req, res) {
+  const postId = new ObjectId(req.params.id);
+  const result = await db
+    .getDb()
+    .collection("posts")
+    .updateOne(
+      { _id: postId },
+      {
+        $set: {
+          title: req.body.title,
+          summary: req.body.summary,
+          body: req.body.content,
+          // date: new Date()
+        },
+      }
+    );
+
+  res.redirect("/posts");
 });
 module.exports = router;
