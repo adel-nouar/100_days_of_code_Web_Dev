@@ -79,7 +79,7 @@ router.get("/admin", function (req, res) {
 router.post("/logout", function (req, res) {
   req.session.user = null;
   req.session.isAuthenticated = false;
-  res.render("/");
+  res.redirect("/");
 });
 
 module.exports = router;
