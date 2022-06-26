@@ -9,7 +9,20 @@ router.get("/", function (req, res) {
 });
 
 router.get("/signup", function (req, res) {
-  res.render("signup");
+  let sessionInputData = req.session.inputData;
+
+  if (!sessionInputData) {
+    sessionInputData = {
+      hasError: false,
+      email: "",
+      confirmEmail: "",
+      password: "",
+    };
+  }
+
+  req.session.inputData = null;
+
+  res.render("signup", { inputData: sessionInputData });
 });
 
 router.get("/login", function (req, res) {
@@ -18,9 +31,42 @@ router.get("/login", function (req, res) {
 
 router.post("/signup", async function (req, res) {
   const userData = req.body;
-  const enteredEmail = userData.email;
+  const enteredEmail = userData.email; // userData['email']
   const enteredConfirmEmail = userData["confirm-email"];
   const enteredPassword = userData.password;
+
+  if (
+    !enteredEmail ||
+    !enteredConfirmEmail ||
+    !enteredPassword ||
+    enteredPassword.trim().length < 6 ||
+    enteredEmail !== enteredConfirmEmail ||
+    !enteredEmail.includes("@")
+  ) {
+    req.session.inputData = {
+      hasError: true,
+      message: "Invalid input - please check your data.",
+      email: enteredEmail,
+      confirmEmail: enteredConfirmEmail,
+      password: enteredPassword,
+    };
+
+    req.session.save(function () {
+      res.redirect("/signup");
+    });
+    return;
+    // return res.render('signup');
+  }
+
+  const existingUser = await db
+    .getDb()
+    .collection("users")
+    .findOne({ email: enteredEmail });
+
+  if (existingUser) {
+    console.log("User exists already");
+    return res.redirect("/signup");
+  }
 
   const hashedPassword = await bcrypt.hash(enteredPassword, 12);
 
