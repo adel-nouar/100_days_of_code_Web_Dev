@@ -33,8 +33,27 @@ app.use(
       maxAge: 30 * 24 * 60 * 60 * 1000,
     },
   })
-),
-  app.use(demoRoutes);
+);
+
+app.use(async function (req, res, next) {
+  const user = req.session.user;
+  const isAuth = req.session.isAuthenticated;
+
+  if (!user || !isAuth) {
+    return next();
+  }
+  const userDoc = await db
+    .getDb()
+    .collection("users")
+    .findOne({ _id: user.id });
+  const isAdmin = userDoc.isAdmin;
+
+  res.locals.isAuth = isAuth;
+  res.locals.isAdmin = isAdmin;
+
+  next();
+});
+app.use(demoRoutes);
 
 app.use(function (error, req, res, next) {
   res.render("500");
