@@ -4,12 +4,12 @@
 <body>
   <%- include('includes/header.ejs') %>
   <main>
-    <%- include('includes/post-form', { 
-      submitUrl: '/posts/' + post._id + '/edit', 
-      hasError: inputData.hasError, 
-      errorMessage: inputData.message, 
-      title: inputData.title, 
-      content: inputData.content }) 
+    <%- include('includes/post-form', {
+      submitUrl: '/posts/' + post.id + '/edit',
+      hasError: inputData.hasError,
+      errorMessage: inputData.message,
+      title: inputData.title,
+      content: inputData.content })
     %>
   </main>
 </body>
