@@ -2,6 +2,7 @@ const express = require("express");
 const mongodb = require("mongodb");
 
 const db = require("../data/database");
+const Post = require("../models/post");
 
 const ObjectId = mongodb.ObjectId;
 const router = express.Router();
@@ -57,12 +58,8 @@ router.post("/posts", async function (req, res) {
     return; // or return res.redirect('/admin'); => Has the same effect
   }
 
-  const newPost = {
-    title: enteredTitle,
-    content: enteredContent,
-  };
-
-  await db.getDb().collection("posts").insertOne(newPost);
+  const post = new Post(enteredTitle, enteredContent);
+  post.save();
 
   res.redirect("/admin");
 });
@@ -72,7 +69,7 @@ router.get("/posts/:id/edit", async function (req, res) {
   const post = await db.getDb().collection("posts").findOne({ _id: postId });
 
   if (!post) {
-    return res.render("404"); // 404.ejs is missing at this point - it will be added later!
+    return res.render("404");
   }
 
   let sessionInputData = req.session.inputData;
