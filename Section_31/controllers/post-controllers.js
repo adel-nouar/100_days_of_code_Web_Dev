@@ -13,10 +13,7 @@ async function getAdmin(req, res) {
 
   const posts = await Post.fetchAll();
 
-  sessionErrorData = validationSession.getSessionErrorData(req, {
-    title: "",
-    content: "",
-  });
+  sessionErrorData = validationSession.getSessionErrorData(req);
 
   res.render("admin", {
     posts: posts,
@@ -58,10 +55,7 @@ async function getSinglePost(req, res) {
     return res.render("404");
   }
 
-  sessionErrorData = validationSession.getSessionErrorData(req, {
-    title: post.title,
-    content: post.content,
-  });
+  sessionErrorData = validationSession.getSessionErrorData(req);
 
   res.render("single-post", {
     post: post,
